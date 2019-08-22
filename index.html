@@ -7,161 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-        }
-        
-        body {
-            font-family: 'Josefin Sans', Arial, sans-serif;
-            color: #001A33;
-            top: 0;
-        }
-        
-        .fixed-top {
-            padding: 0;
-            margin: 0;
-        }
-        
-        img {
-            width: 100%;
-            max-width: 100%;
-        }
-        
-        .carousel-item {
-            height: 400px;
-        }
-        
-        .carousel-item img {
-            height: 400px;
-            object-fit: cover;
-        }
-        
-        section {
-            padding: 50px 0;
-        }
-        
-        aside {
-            padding: 45px 0;
-        }
-        
-        .navbar-brand img {
-            max-width: 50px;
-            max-height: 50px;
-        }
-        
-        hr {
-            max-width: 120px;
-            border-width: 3px;
-            opacity: 0.08;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-        
-        hr.light {
-            border-color: #fff;
-            opacity: 1;
-        }
-        
-        hr.primary {
-            border-color: #007FFF;
-            opacity: 1;
-        }
-        /*FOOTER*/
-        
-        footer {
-            background: #c7c7c8;
-            color: white;
-            margin-top: 100px;
-        }
-        
-        footer a {
-            color: #fff;
-            font-size: 14px;
-            transition-duration: 0.2s;
-        }
-        
-        footer a:hover {
-            color: #FA944B;
-            text-decoration: none;
-        }
-        
-        .copy {
-            font-size: 12px;
-            padding: 10px;
-            border-top: 1px solid #FFFFFF;
-        }
-        
-        .footer-middle {
-            padding-top: 2em;
-            color: white;
-        }
-        /*SOCİAL İCONS*/
-        /* footer social icons */
-        
-        ul.social-network {
-            list-style: none;
-            display: inline;
-            margin-left: 0 !important;
-            padding: 0;
-        }
-        
-        ul.social-network li {
-            display: inline;
-            margin: 0 5px;
-        }
-        /* footer social icons */
-        
-        #lab_social_icon_footer {
-            padding: 40px 0;
-            background-color: #dedede;
-        }
-        
-        #lab_social_icon_footer a {
-            color: #333;
-        }
-        
-        #lab_social_icon_footer .social:hover {
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -o-transform: scale(1.1);
-        }
-        
-        #lab_social_icon_footer .social {
-            -webkit-transform: scale(0.8);
-            /* Browser Variations: */
-            -moz-transform: scale(0.8);
-            -o-transform: scale(0.8);
-            -webkit-transition-duration: 0.5s;
-            -moz-transition-duration: 0.5s;
-            -o-transition-duration: 0.5s;
-        }
-        /*
-    Multicoloured Hover Variations
-*/
-        
-        #lab_social_icon_footer #social-fb:hover {
-            color: #3B5998;
-        }
-        
-        #lab_social_icon_footer #social-tw:hover {
-            color: #4099FF;
-        }
-        
-        #lab_social_icon_footer #social-gp:hover {
-            color: #d34836;
-        }
-        
-        #lab_social_icon_footer #social-em:hover {
-            color: #f39c12;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-defaul fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./assets/brand-logo.jpg" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -179,25 +29,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#Volunteer">Volunteer</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                More
-                              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            Scholarships
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#ourScholarshipProgram">Our Scholarship Program</a>
+                            <a class="dropdown-item" href="#medicalScholarships">Medical Scholarships</a>
+                            <a class="dropdown-item" href="#advancedSkills">Advanced Skills</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#wilmontBullScholarship">Wilmont Bull Scholarship</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
-
     <div class="row">
         <section id="Home" class="container-fluid">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -208,13 +59,17 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://source.unsplash.com/z55CR_d0ayg/1500x1200" alt="First slide">
+                        <img class="d-block w-100" src="assets/aerial.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://source.unsplash.com/3IEZsaXmzzs/1500x1200" alt="Second slide">
+                        <img class="d-block w-100" src="assets/hospital1.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://source.unsplash.com/3IEZsaXmzzs/1500x1200" alt="Third slide">
+                        <img class="d-block w-100" src="assets/hospital2.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to Emory Johns Creek Hospital Auxiliary</h2>
+                        <p>The Mission is to provide compassionate service to our hospital and the community</p>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -226,8 +81,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-
         </section>
         <section id="VicNet" class="container-fluid mt-2">
             <div class="container text-center">
@@ -241,11 +94,10 @@
 
             </div>
         </section>
-
         <section id="Volunteer" class="container-fluid bg-alt">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-md-12 text-center">
                         <h2 class="m-t-0 text-primary">How to get involved:</h2>
                         <hr class="primary">
                     </div>
@@ -280,512 +132,328 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="three">
-            <div class="container-fluid">
-                <h5 class="text-primary text-xs-center text-uppercase">Now there are 5 Breakpoints</h5>
-                <p class="text-xs-center"><small>To accomodate a variety of devices and screen widths</small></p>
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-                        <div class="row">
-                            <div class="col-md-2 col-md-offset-1 col-sm-offset-0">
-                                <div class="card-block text-xs-center">
-                                    <h1 class="card-title">XS</h1>
-                                    <h3 class="text-muted">&lt;34 em</h3>
-                                    <hr class="primary hidden-sm-up" />
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card-block text-xs-center">
-                                    <h1 class="card-title">SM</h1>
-                                    <h3 class="text-muted">≥34 em</h3>
-                                    <hr class="primary hidden-md-up" />
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card-block text-xs-center">
-                                    <h1 class="card-title">MD</h1>
-                                    <h3 class="text-muted">≥48 em</h3>
-                                    <hr class="primary hidden-lg-up" />
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card-block text-xs-center">
-                                    <h1 class="card-title">LG</h1>
-                                    <h3 class="text-muted">≥62 em</h3>
-                                    <hr class="primary hidden-xl-up" />
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card-block text-xs-center">
-                                    <h1 class="card-title">XL</h1>
-                                    <h3 class="text-muted">≥75 em</h3>
-                                    <hr class="primary" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1">
-                        <div class="row">
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample14.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample20.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card card-inverse">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample22.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" class="card-img img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample23.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg" class="card-img img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" class="card-img img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-xs-center">
-                                <div class="card">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-xl-offset-0 col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-6 text-xs-center">
-                                <div class="card center-block">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg" class="img-fluid">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title text-xs-center">
-                                            <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg">view</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-        </section>
-        <aside class="bg-alt">
-            <div class="container text-xs-center">
-                <h2 class="text-primary text-xs-center">The Grid is More Flexible</h2>
-                <hr class="primary">
-                <br>
-                <div class="row wow fadeInUp">
-                    <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
-                        <h3>Start</h3>
-                        <i class="icon-lg ion-ios-speedometer-outline wow pulse"></i>
-                        <h1 class="text-primary">100</h1>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
-                        <h3>Migrate</h3>
-                        <i class="icon-lg ion-ios-location-outline wow pulse"></i>
-                        <h1 class="text-primary">3421</h1>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
-                        <h3>Build</h3>
-                        <i class="icon-lg ion-ios-pulse wow pulse"></i>
-                        <h1 class="text-primary">4%</h1>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
-                        <h3>Play</h3>
-                        <i class="icon-lg ion-ios-game-controller-b-outline wow pulse"></i>
-                        <h1 class="text-primary">50%</h1>
-                    </div>
-                </div>
-                <hr>
-                <br>
-            </div>
+
+        <section id="contactus" class="container-fluid bg-alt">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        6
-                    </div>
-                    <div class="col-sm-6 text-normal">
-                        <div class="card bg-primary"> 6 units </div>
-                    </div>
-                    <div class="col-sm-5">
-                        5
-                    </div>
-                    <div class="col-sm-7 text-normal">
-                        <div class="card bg-primary"> 7 units </div>
-                    </div>
-                    <div class="col-sm-4">
-                        4
-                    </div>
-                    <div class="col-sm-8 text-normal">
-                        <div class="card bg-primary"> 8 units </div>
-                    </div>
-                    <div class="col-sm-3">
-                        3
-                    </div>
-                    <div class="col-sm-9 text-normal">
-                        <div class="card bg-primary"> 9 units </div>
-                    </div>
-                    <div class="col-sm-2">
-                        2
-                    </div>
-                    <div class="col-sm-10 text-normal">
-                        <div class="card bg-primary"> 10 units </div>
-                    </div>
-                    <div class="col-sm-1">
-                        1
-                    </div>
-                    <div class="col-sm-11 text-normal">
-                        <div class="card bg-primary"> 11 units </div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 text-normal">
-                        <div class="card bg-primary"> 2 </div>
-                    </div>
-                    <div class="col-lg-10">
-
-                    </div>
-                    <div class="col-lg-4 text-normal">
-                        <div class="card bg-primary"> 4 </div>
-                    </div>
-                    <div class="col-lg-8">
-
-                    </div>
-                    <div class="col-lg-6 text-normal">
-                        <div class="card bg-primary"> 6 </div>
-                    </div>
-                    <div class="col-lg-6">
-
-                    </div>
-                    <div class="col-lg-8 text-normal">
-                        <div class="card bg-primary"> 8 </div>
-                    </div>
-                    <div class="col-lg-4">
-
-                    </div>
-                    <div class="col-lg-10 text-normal">
-                        <div class="card bg-primary"> 10 </div>
-                    </div>
-                    <div class="col-lg-2">
-
-                    </div>
-                    <div class="col-lg-12 text-normal">
-                        <div class="card bg-primary"> 12 </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <section id="four">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-6">
-                        <h2 class="text-nowrap">Fonts got larger</h2>
-                    </div>
-                    <div class="col-xs-12 col-lg-6 text-xs-right">
-                        <button class="btn btn-lg text-normal btn-secondary-outline">Outline</button>
-                        <button class="btn btn-lg text-normal btn-primary-outline">Buttons</button>
-                        <button class="btn btn-lg text-normal btn-danger-outline">Are Here</button>
-                    </div>
-                    <div class="col-xs-12">
-                        <br/>
-                        <h1 class="display-4">Wow.</h1>
-                        <p class="lead text-justify">Text is larger in Bootstrap 4. The default font size is now 16px. There are also new "Display headings" that really stand out. The new `em` based sizing is cool too.</p>
-                    </div>
-                </div>
-                <hr/>
-                <div class="row">
-                    <div class="col-md-6 col-xs-12 text-xs-center">
-                        <nav class="navbar navbar-dark bg-inverse text-normal">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <h2>Navbar</h2>
-                        <p class="text-justify">The new Bootstrap 4 <code>.navbar</code> code is lighter. You can make it responsive using the Collapse component and <code>.navbar-toggleable-*</code> classes that enable you to control the breakpoint.</p>
-                    </div>
-                    <div class="col-xs-12 clearfix">
-                        <hr>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <h2>RIP icons, affix, etc..</h2>
-                        <p class="text-justify">Some components have been removed from Bootstrap 4. The Glyphicons icon fonts are no longer included, but it's easy to utilize another font like FontAwesome, <a href="https://octicons.github.com/">Octicons</a> or <a href="http://ionicons.com/">Ionicons</a>.
-                            The Affix jQuery plugin has also been dropped. The new recommendation is to use HTML5 position: sticky or a sticky polyfill instead.
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-xs-12 text-xs-center">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i class="icon-lg ion-ios-cloud-download-outline wow fadeIn"></i></a>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-ios-pie-outline wow fadeIn text-primary"></i>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-ios-star-outline wow fadeIn text-primary"></i>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-ios-heart-outline wow fadeIn text-primary"></i>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-ios-pulse wow fadeIn text-primary"></i>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-ios-refresh-outline wow fadeIn text-primary"></i>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-ios-gear-outline wow fadeIn text-primary"></i>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-ios-timer-outline wow fadeIn text-primary"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 clearfix">
-                        <hr>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="card text-normal">
-                            <div class="card-block">
-                                <ul class="list-unstyled">
-                                    <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
-                                    <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
-                                    <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li>
-                                    <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li>
-                                </ul>
-                                <h6>Migration tips</h6>
-                                <ul class="list-unstyled">
-                                    <li><code>well</code> = <code>card card-block</code></li>
-                                    <li><code>panel panel-default</code> = <code>card</code></li>
-                                    <li><code>text-center</code> = <code>text-xs-center</code></li>
-                                    <li><code>text-right</code> = <code>text-xs-right</code></li>
-                                    <li><code>pull-right</code> = <code>pull-xs-right</code></li>
-                                    <li><code>img-responsive</code> = <code>img-fluid</code></li>
-                                    <li><code>list-inline > li</code> = <code>list-inline-item</code></li>
-                                    <li>add <code>nav-item</code> to nav navbar > li</li>
-                                    <li>add <code>nav-link</code> to nav navbar > li > a</li>
-                                    <li>the <code>active</code> class is added to <code>nav-item</code> for scrollspy</li>
-                                    <li><code>carousel-inner > item</code> = <code>carousel-item</code></li>
-                                    <li><code>table-condensed</code> = <code>table-sm</code></li>
-                                    <li><code>input-lg</code> = <code>form-control-lg</code></li>
-                                    <li><code>input-sm</code> = <code>form-control-sm</code></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <h2>Handy utilities</h2>
-                        <p class="text-justify">Several simple, but useful <a href="https://v4-alpha.getbootstrap.com/components/utilities">utility classes</a> have been added like text, margin and padding helpers. There are also <a href="https://v4-alpha.getbootstrap.com/components/utilities/#contextual-colors-and-backgrounds">contextual colors</a>                            and
-                            <a href="https://v4-alpha.getbootstrap.com/layout/responsive-utilities/">responsive utility</a> classes to hide content on specific breakpoints. There's even a new fluid Jumbotron!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <aside class="bg-alt">
-            <div class="container text-xs-center">
-                <div class="call-to-action">
-                    <h2 class="text-primary">Get Started</h2>
-                    <a href="http://www.bootstrapzero.com" target="ext" class="btn btn-primary-outline btn-lg wow flipInX text-uppercase">Free Download</a>
-                </div>
-                <br>
-                <hr>
-                <br>
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <div class="row">
-                            <h6 class="wide-space text-xs-center text-uppercase">Bootstrap is Built on these Standards</h6>
-                            <div class="col-sm-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
-                            </div>
-                            <div class="col-sm-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-social-sass" title="sass"></i>
-                            </div>
-                            <div class="col-sm-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
-                            </div>
-                            <div class="col-sm-3 col-xs-6 text-xs-center">
-                                <i class="icon-lg ion-social-css3-outline" title="css 3"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <section id="last">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-xs-center">
-                        <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
+                    <div class="col-md-12 text-center">
+                        <h2 class="m-t-0 text-primary">CONTACT US</h2>
                         <hr class="primary">
-                        <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
                     </div>
-                    <div class="col-lg-10 col-lg-offset-1 text-xs-center">
-                        <form class="contact-form row">
-                            <div class="col-md-4">
-                                <label></label>
-                                <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-2">
+                        <form method="post" data-form-title="CONTACT US" class="contactUs">
+                            <input type="hidden" data-form-email="true">
+                            <div class="form-group">
+                                <!-- <label for="name">Name</label> -->
+                                <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
                             </div>
-                            <div class="col-md-4">
-                                <label></label>
-                                <input type="text" class="form-control" placeholder="Email">
+                            <div class="form-group">
+                                <!-- <label for="email">Email</label> -->
+                                <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
                             </div>
-                            <div class="col-md-4">
-                                <label></label>
-                                <input type="text" class="form-control" placeholder="Phone">
+                            <div class="form-group">
+                                <!-- <label for="message">Message</label> -->
+                                <textarea class="form-control" name="message" placeholder="Message" rows="6" data-form-field="Message"></textarea>
                             </div>
-                            <div class="col-md-12">
-                                <label></label>
-                                <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
-                            </div>
-                            <div class="col-md-4 col-md-offset-4">
-                                <label></label>
-                                <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                            <div>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">CONTACT US</button>
                             </div>
                         </form>
                     </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>
+                                    Better yet, see us in person!
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Emory Johns Creek Hospital Auxiliary</h3>
+                                <p class="card-text">
+                                    <address>6325 Hosptal Parkway<br>
+                                                Johns Creek,  Ga 30097<br>
+                                                <abbr title="Phone">P:</abbr> (678) 474-7000
+                                    </address>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Google Maps-->
+                    <div class="container-fluid">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!--Google map-->
                 </div>
             </div>
-        </section> -->
+        </section>
+
+        <section id="ourScholarshipProgram" class="container-fluid bg-alt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="m-t-0 text-primary">Our Scholarship Program</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="text-center">
+                            <div class="feature">
+                                <p class="lead">
+                                    The EJCH Auxiliary has three different scholarships available:
+                                </p>
+                            </div>
+                        </div>
+                        <ol>
+                            <li class="mb-2">the Emory Johns Creek Hospital Auxiliary Scholarship; </li>
+                            <li class="mb-2">the Elizabeth Wilmot Bull Scholarship;</li>
+                            <li class="mb-2">the Advanced Skills Scholarship. In the 9 years that the Auxiliary has been offering scholarships, we have awarded nearly $100,000 to deserving students seeking a degree in a health care field. If you have questions on any
+                                of these scholarships, please contact the scholarship chairperson.</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/hospital2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Eileen Kovalchik</h4>
+                                <p class="title">Scholarship Chairperson</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">(770) 442-5390 – emklib@bellsouth.net</li>
+                                <li class="list-group-item">560 Brightmore Downs</li>
+                                <li class="list-group-item">Alpharetta, GA 300</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Scholarship link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="medicalScholarships" class="container-fluid bg-alt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="m-t-0 text-primary">Auxiliary Scholarships</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="text-center">
+                            <div class="feature">
+                                <p class="lead">
+                                    The ADVANCED SKILLS SCHOLARSHIP is available to full-time employees of Emory Johns Creek Hospital who meet certain criteria established by the Auxiliary. Our goal is to enhance the opportunities for our employee’s careers at Emory Johns Creek Hospital.
+                                    If you are interested in applying for the Advanced Skills Scholarship, speak to your supervisor. The Auxiliary has a limited number of scholarships of up to $1500 each. The awarding of scholarships will be at the discretion
+                                    of the Emory Johns Creek Hospital Auxiliary.
+                                </p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="mb-2">A completed application </li>
+                            <li class="mb-2">Two (2) signed letters of recommendation on appropriate letterhead and in a sealed envelope. One should be from a teacher or supervisor </li>
+                            <li class="mb-2">A short narrative essay stating your career goals and reason you chose a health-related field of study </li>
+                            <li>Official transcript from the last educational institution attended </li>
+                            <li>Verification letter from school indicating acceptance into a health-related program, including date of acceptance (month and year) and proposed date of graduation (month and year) We cannot accept applications for pre-med or
+                                pre-nursing. Physical therapy and occupational therapy applicants must furnish letter of acceptance to a master's program. </li>
+                            <li>Completed and signed application and agreement </li>
+                            <li>Must be received no later than April 12, 2019 with notification by June 1, 2019.</li>
+                        </ul>
+                        <p>Applications can be downloaded by clicking on the Auxiliary Scholarship Navigation tab. Please be sure to read the application carefully for exact requirements. </p>
+                        <h5 style="text-decoration: underline">Application Instructions </h5>
+                        <p>Completed applications with all required attachments must be received by the Scholarship Committee on or before April 12, 2019. Scholarship recipients will be selected by the Committee and notified, in writing of their selection,
+                            on or before June 1, 2019. All selections by the Committee will be considered final. Scholarship money awarded by the Auxiliary can be used to include tuition, lab fees, and registration. It can also be applied to the cost
+                            of books, special fees, special equipment needed, and uniforms that are necessary in the course of study. Scholarship money will be sent directly to the school. <strong>Scholarship funds cannot be used for room and board.</strong></p>
+
+                        <p>A member of the Scholarship Committee will be more than happy to answer any questions you may have regarding the scholarship program. Please direct questions to: Eileen Kovalchik, Scholarship Chairperson, at 770-442-5390.</p>
+
+                        <p>We would be happy to consider the application of a student who meets the criteria. It would be our pleasure and privilege to provide some financial support in your educational pursuit.</p>
+                        <p> <strong>To apply, download the following scholarship documents.</strong>Specific instructions for completing and submitting applications can be found in the "Checklist" portion of the application.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/hospital2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Eileen Kovalchik</h4>
+                                <p class="title">Chairperson</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">(770) 442-5390 -emklib@bellsouth.net</li>
+                                <li class="list-group-item">560 Brightmore Downs</li>
+                                <li class="list-group-item">Alpharetta, GA 30005</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Scholarship link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h2>Scholarship Documents</h2>
+                        <hr class="primary">
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Scholarship Renewal Request (pdf)
+                            </div>
+                            <div class="card-body">
+                                <a href="https://img1.wsimg.com/blobby/go/5dbb0afb-56ad-4d5e-95aa-094eaa497e72/downloads/1cj3uufn9_716341.pdf?ver=1562347640039" target='_blank' class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Scholarship Application (pdf)
+                            </div>
+                            <div class="card-body">
+                                <a href="https://img1.wsimg.com/blobby/go/5dbb0afb-56ad-4d5e-95aa-094eaa497e72/downloads/1d08pf4tm_627936.pdf?ver=1562347640039" target='_blank' class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Scholarship Checklist (pdf)
+                            </div>
+                            <div class="card-body">
+                                <a href="https://img1.wsimg.com/blobby/go/5dbb0afb-56ad-4d5e-95aa-094eaa497e72/downloads/1d08phpev_713758.pdf?ver=1562347640039" target='_blank' class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Scholarship agreement (pdf)
+                            </div>
+                            <div class="card-body">
+                                <a href="https://img1.wsimg.com/blobby/go/5dbb0afb-56ad-4d5e-95aa-094eaa497e72/downloads/1d08pikp5_989403.pdf?ver=1562347640039" target='_blank' class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="advancedSkills" class="container-fluid bg-alt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="m-t-0 text-primary">Advanced Skills Scholarship</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="text-center">
+                            <div class="feature">
+                                <p class="lead">
+                                    The ADVANCED SKILLS SCHOLARSHIP is available to full-time employees of Emory Johns Creek Hospital who meet certain criteria established by the Auxiliary. Our goal is to enhance the opportunities for our employee’s careers at Emory Johns Creek Hospital.
+                                    If you are interested in applying for the Advanced Skills Scholarship, speak to your supervisor. The Auxiliary has a limited number of scholarships of up to $1500 each. The awarding of scholarships will be at the discretion
+                                    of the Emory Johns Creek Hospital Auxiliary.
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="text-center">ADVANCED SKILLS GUIDELINES </h4>
+                        <ul>
+                            <li>Immediate supervisor/department head to write a letter stating that this course will be beneficial for applicant to take (letter must be attached to the scholarship application.) </li>
+                            <li>Applicant must write an essay indicating how the Advanced Skills Scholarship is going to advance their career at Emory Johns Creek Hospital within their department. </li>
+                            <li>Applicant must be a full-time employee of Emory Johns Creek Hospital. </li>
+                            <li>Proof of registration for course is required. </li>
+                            <li>Applicant will complete and submit application (with required letters attached.) </li>
+                            <li>Payment will be made directly to the school/organization upon receipt of proper documentation.</li>
+                            <li>The scholarship can be used only for course registration fees, tuition and books.</li>
+                        </ul>
+                        <p class="text-center">Anyone interested in applying for this scholarship should contact the auxiliary scholarship chairperson (at the address listed below). Auxiliary approval, in writing, will be provided to the applicant. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/hospital2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Eileen Kovalchik</h4>
+                                <p class="title">Chairperson</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">(770) 442-5390 – emklib@bellsouth.net</li>
+                                <li class="list-group-item">560 Brightmore Downs</li>
+                                <li class="list-group-item">Alpharetta, GA 300</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://img1.wsimg.com/blobby/go/5dbb0afb-56ad-4d5e-95aa-094eaa497e72/downloads/1cj3uektq_908991.pdf?ver=1562347639638" target='_blank' class="card-link">Scholarship Application (pdf)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wilmontBullScholarship" class="container-fluid bg-alt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="m-t-0 text-primary">ELIZABETH WILMOT BULL SCHOLARSHIP</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="text-center">
+                            <div class="feature">
+                                <p class="lead">
+                                    The ELIZABETH WILMOT BULL SCHOLARSHIP is co-sponsored by the Georgia Council on Auxiliaries/Volunteers of the Georgia Hospital Association. This scholarship is awarded to a student pursuing a health-related degree.
+                                </p>
+                            </div>
+                        </div>
+                        <h4>Qualifications for this scholarship include:</h4>
+                        <ul>
+                            <li>Enrolled in a medical/health-related course of study in a Georgia college. Pre-med and pre-nursing applications cannot be accepted. Programs such as biology or chemistry as stand alone majors or on-line programs or med techs
+                                do not qualify, nor does Veterinary Medicine.</li>
+                            <li>Two (2) letters of reference from teacher, counselor, supervisor, or clergy on appropriate letterhead, dated and in a sealed envelope.</li>
+                            <li>A 3.0 GPA or better</li>
+                            <li>Narrative profile of yourself, stressing factors relevant to your occupational choice and goals.</li>
+                            <li>Official high school and/or college transcript and available aptitude and achievement tests. High school transcript needed only if you are entering your freshman year of a medically-related program through a technical school.</li>
+                            <li>Official proof of acceptance (if not currently enrolled) from the school you will attend.</li>
+                            <li>A personal interview with a letter of recommendation from the President or Scholarship Chairperson of the sponsoring Auxiliary is required. Letter of recommendation must be on Auxiliary letterhead, dated and signed.</li>
+                            <li>Completed application form with all the reqired attachments must be postmarked to the Elizabeth Wilmot Bull Scholarship Chairperson not later than January 31, 2019</li>
+                            <li>Applications are available at the Concierge's Desk of the Emory Johns Creek Hospital during regular business hours or by contacting Eileen Kovalchik at <strong>emklib@bellsouth.net.</strong> Please read the application carefully
+                                for exact requirements.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/hospital2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Eileen Kovalchik</h4>
+                                <p class="title">Chairperson</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">(770) 442-5390 – emklib@bellsouth.net</li>
+                                <li class="list-group-item">560 Brightmore Downs</li>
+                                <li class="list-group-item">Alpharetta, GA 300</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" target='_blank' class="card-link">Scholarship Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </div>
     <footer class="mainfooter" role="contentinfo" id="lab_social_icon_footer">
@@ -796,7 +464,7 @@
                     <div class="col-md-12 copy">
 
                         <div class="text-center center-block">
-                            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                            <a href="https://www.facebook.com/EJCHAuxiliary"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
                             <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
                             <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
                             <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
@@ -805,8 +473,6 @@
                             Copyright © 2019 Emory Johns Creek Hospital Auxiliary - All Rights Reserved.</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </footer>
@@ -863,25 +529,15 @@
             $(this).parent('li').addClass('active');
         });
 
-        console.clear()
-        console.log("READY!");
-
         $(".navbar-nav li").on('click', 'a', function(event) {
             event.preventDefault();
-
-            // Which link was clicked?
-            console.log($(this).attr("href"));
-
             // Section 1 case:
             if ($(this).attr("href") == "#section1") {
                 $("body").scrollTop(0);
-                console.log("Window simply has to scroll to position: 0");
             }
 
             // Section 4 case (Or any link which triggers a sub-menu)
-            if (typeof($(this).attr("href")) == "undefined") {
-                console.log("This link shall NOT trigger a scroll.");
-            }
+            if (typeof($(this).attr("href")) == "undefined") {}
 
             // All the other cases.
             if (typeof($(this).attr("href")) != "undefined" && $(this).attr("href") != "#section1") {
@@ -889,17 +545,10 @@
                 var o = $($(this).attr("href")).offset();
                 var sT = o.top - $(".navbar").outerHeight(true);
                 window.scrollTo(0, sT);
-
-                console.log("Section offset is: " + o.top);
-                console.log("Nav bar height is: " + $(".navbar").outerHeight(true));
-                console.log("Window has to scroll to position: " + sT);
-
             }
-
-            // Just an empty console line for clarity.
-            console.log("");
         });
     </script>
+    <script src="https://maps.google.com/maps/api/js"></script>
 </body>
 
 </html>
